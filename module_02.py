@@ -47,3 +47,28 @@ print(f"The number is {number:05}")
 
 # output: Hello,          John
 print(f"Hello, {name:>10}")
+
+# Type Conversion
+age = 25
+current_salary = 67275.21
+
+age_and_salary = age + current_salary
+
+print(age_and_salary, type(age_and_salary))
+
+months_old = "11"
+years_old = 25
+
+# age is implicitly converted to interger
+# months_old is explicitly converted to float
+age = years_old + (float(months_old) / 12)
+
+print(f"Age as a float is {age:.3f}")
+
+# $67,275.21
+print(f"Salary is: ${current_salary:,.2f}")
+
+
+age = int(age)
+
+print(age)
