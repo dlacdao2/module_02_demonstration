@@ -96,3 +96,40 @@ print(tuple_name, type(tuple_name))
 list_of_numbers = [1, 2, 3]
 
 tuple_of_numbers = tuple(list_of_numbers)
+
+
+# Dictionaries 
+# unordered
+# mutable
+# key, value pairs
+# {}
+
+fruit_dictionary = {'apples': 23, 'oranges': 10, 'bananas' : 59}
+
+print(fruit_dictionary['oranges'])
+
+fruit_dictionary['oranges'] = 100
+print(fruit_dictionary['oranges'])
+
+fruit_dictionary['pears'] = 12
+
+print(fruit_dictionary)
+
+fruit_dictionary['apple'] = 10
+
+print(fruit_dictionary)
+
+
+print(fruit_dictionary.keys())
+print(fruit_dictionary.values())
+
+# print(fruit_dictionary['orange'])
+
+print(fruit_dictionary.get('oranges', 'does not exist'))
+
+fruit_dictionary.pop('oranges')
+
+print(fruit_dictionary)
+
+fruit_dictionary.clear()
+print(fruit_dictionary)
