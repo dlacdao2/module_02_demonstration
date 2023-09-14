@@ -63,3 +63,36 @@ print(red_river_list[-1])
 
 #RRC Polytechnic
 print(red_river_list[-1: -5: -1])
+
+
+# Tuples
+# ordered, immutable
+# rounded, brackets 
+provinces = ('BC', 'AB', 'MB', 'SK')
+manitoba = ('mb')
+print(type(provinces))
+print(type(manitoba))
+manitoba = ('mb',)
+print(type(manitoba))
+
+provinces = 'BC', 'AB', 'MB', 'SK'
+print(type(provinces))
+
+# provinces[2] = "Manitoba"
+
+random_tuple = (1, 66, 2, 12, 32, -2, 54)
+
+maximum = max(random_tuple)
+print(maximum)
+
+print(min(random_tuple))
+
+print(sum(random_tuple))
+
+name = "John"
+tuple_name = tuple(name)
+print(tuple_name, type(tuple_name))
+
+list_of_numbers = [1, 2, 3]
+
+tuple_of_numbers = tuple(list_of_numbers)
