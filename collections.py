@@ -133,3 +133,56 @@ print(fruit_dictionary)
 
 fruit_dictionary.clear()
 print(fruit_dictionary)
+
+# set
+# unordered 
+# mutable
+# values must be unique 
+# {}
+
+primes = {2, 3, 5, 7, 11, 13, 17, 19, 23}
+# fives = {} <--- this would create an empty dictionary 
+fives = set()
+
+print(primes, type(primes))
+print(fives, type(fives))
+
+primes.add(29)
+print(primes)
+
+primes.add(2)
+print(primes)
+
+fives.add(5)
+fives.add(10)
+
+primes.remove(3)
+#primes.remove(10)
+
+primes.discard(11)
+primes.discard(20)
+
+print(primes)
+fives.add(15)
+fives.add(20)
+# fives.add({25,30}) <-- can't do this
+
+print(primes)   
+print(fives)
+
+# {2, 5, 7, 13, 17, 19, 23, 29}        
+# {10, 20, 5, 15}
+
+union_of_sets = primes.union(fives)
+print(union_of_sets)
+
+intersection_of_sets = primes.intersection(fives)
+print(intersection_of_sets)
+
+primes_difference = primes.difference(fives)
+print(primes_difference)
+
+fives_difference = fives.difference(primes)
+
+print(fives_difference)
+
